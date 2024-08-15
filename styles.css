@@ -9,7 +9,7 @@ body {
 
 
 /* MENU */
-.contenedor-header{
+.contenedor-header {
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -17,7 +17,8 @@ body {
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
+
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -25,17 +26,20 @@ body {
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+
+.contenedor-header header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
     color: #6f818e;
     text-decoration: none;
 }
-.contenedor-header header ul{
+
+.contenedor-header header ul {
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
+
+.contenedor-header header nav ul li a {
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -43,12 +47,14 @@ body {
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+
+.contenedor-header header nav ul li a:hover {
     color: #1CB698;
 }
-.nav-responsive{
+
+.nav-responsive {
     background-color: #6f818e;
-    color:#fff;
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -56,14 +62,16 @@ body {
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:980px){
-    nav{
+@media screen and (max-width:980px) {
+    nav {
         display: none;
     }
-    .nav-responsive{
+
+    .nav-responsive {
         display: block;
     }
-    nav.responsive{
+
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
@@ -71,30 +79,33 @@ body {
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul{
+
+    nav.responsive ul {
         display: block !important;
     }
-    nav.responsive ul li{
+
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
 
 
-*{
+/* SECCION body */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: center;
 
@@ -102,27 +113,31 @@ body{
     width: 45rem;
 }
 
-.card{
+.card {
     position: relative;
     left: 0;
     width: 3rem;
     border-radius: 5rem;
 
-    height: 25rem;
+    height: 30rem;
     overflow: hidden;
     transition: .4s ease-in-out;
-
     box-shadow: 0 5 12px rgba(0, 0, 0, .3);
+
     flex: .15;
+    background-color: #fbf6f6;
+    /* Fondo para asegurar el color */
 }
 
-.card img{
+.card img {
     position: relative;
-    height: 25rem;
+    height: 100%;
     object-fit: cover;
+    width: 100%;
+
 }
 
-.card:hover{
+.card:hover {
     flex: 1 1 0;
     cursor: pointer;
     border-radius: 1rem;
